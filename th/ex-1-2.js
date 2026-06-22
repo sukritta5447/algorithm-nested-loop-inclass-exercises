@@ -7,6 +7,17 @@
 */
 
 // Start coding here
+function sumAllValues(matrix){
+    let result = 0;
+    for (let i=0 ; i<matrix.length ; i++){
+        // console.log('สิ่งที่จะได้คือ', matrix[i])
+        for (let j=0 ; j<matrix[i].length ; j++){
+            // console.log('สิ่งที่จะได้คือ', matrix[i][j])
+            result += matrix[i][j];
+        }
+    }
+    return result;
+}
 
 const matrix = [
   [11, 25, 18],

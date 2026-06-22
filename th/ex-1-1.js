@@ -7,7 +7,19 @@
 */
 
 // Start coding here
-
+function multiplyByTwo(matrix){
+    const result = []; // ต้องการบรรจุลง array ใหม่
+    //ใช้ nested loop เพราะอยากเข้าถึงสมาชิกแต่ละตัว
+    for (let i = 0 ; i<matrix.length ; i++){
+        // console.log('รอบนอกแต่ละรอบคือ', matrix[i]);
+        //ต่อไปคือต้อง loop เข้าไปกล่องใน
+        for (let j=0 ; j<matrix[i].length ; j++){
+            // console.log('สิ่งที่จะเข้าถึงคือ', matrix[i][j])
+            result.push(matrix[i][j] * 2); // matrix[i][j] คือเหมือนเจาะกล่อง 2 ขั้น
+        }
+    }
+    return result; // เอาไปไว้ใน array ที่สร้างไว้
+}
 const matrix = [
   [11, 22],
   [33, 44],

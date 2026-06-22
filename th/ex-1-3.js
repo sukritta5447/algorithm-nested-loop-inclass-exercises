@@ -7,6 +7,19 @@
 */
 
 // Start coding here
+function generatePattern(size){
+    let result = ""; //กล่องเก็บผลลัพธ์
+    for (i=size ; i >= 1 ; i--){
+        //กล่องนอกเจนจำนวนดาวตั้งต้น
+        //i = จำนวนดาว , i ลดลงเรื่อยๆ
+        let row = "";
+        for (let j=1 ; j<=i ; j++){
+            row += "* ";
+        }
+        result += row + "\n";
+    }
+    return result
+}
 
 console.log(generatePattern(3)); 
 
